@@ -17,6 +17,14 @@ body {
     margin-left: 20px;
 }
 
+.container p {
+    margin-left: 20px;
+}
+
+.container a {
+    margin-left: 20px;
+}
+
 header {
     position: fixed;
     width: 100%;
@@ -32,7 +40,7 @@ header {
     font-size: 28px;
     margin-bottom: 0;
     color: #fff;
-    transition: color 0.3s;
+    transition: color 0.3s;   
 }
 
 .header:hover {
@@ -73,6 +81,7 @@ nav a:hover {
     display: block;
     transition: background-color 0.3s;
     padding: 10px 10px;
+    margin-left: -2.5px;
 }
 
 .dropdown-content a:hover {
