@@ -107,6 +107,10 @@ nav a:hover {
     padding: 10px 10px
 }
 
+.dropdown-content a:visited {
+    color: #121212
+}
+
 .dropdown-content a {
     color: #fff;
     text-decoration: none;
