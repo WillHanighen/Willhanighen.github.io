@@ -1,28 +1,56 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #121212;
-    font-size: 20px;
+    font-size: 17px;
     color: #fff;
-    margin: 0;
+    margin: 0
 }
 
 .container {
     width: 100%;
     margin: 20px auto;
     box-sizing: border-box;
-    overflow-x: hidden;
+    overflow-x: hidden
 }
 
 .container div {
-    margin-left: 20px;
+    margin-left: 5px;
+    line-height: 1.65
 }
 
 .container p {
-    margin-left: 20px;
+    margin-left: 25px;
+    line-height: 1.65;
+    font-size: 17px
 }
 
 .container a {
-    margin-left: 20px;
+    margin-left: 25px;
+    line-height: 1.65;
+    font-size: 17px;
+    color: rgb(10, 146, 236)
+}
+
+.container a:visited {
+    color: rgb(9, 128, 207)
+}
+
+.container h1 {
+    margin-left: 25px;
+    line-height: 1.65;
+    font-size: 40px
+}
+
+.container h2 {
+    margin-left: 25px;
+    line-height: 1.65;
+    font-size: 30px
+}
+
+.container li {
+    margin-left: 25px;
+    line-height: 1.65px;
+    font-size: 17px
 }
 
 header {
@@ -36,31 +64,35 @@ header {
     padding: 10px 10px
 }
 
+header div:hover {
+    font-size: 36px;
+}
+
 .header {
     font-size: 28px;
     margin-bottom: 0;
     color: #fff;
-    transition: color 0.3s;   
+    transition: color 0.3s
 }
 
 .header:hover {
-    color: #bbb;
+    color: #bbb
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
-    transition: color 0.2s;
+    transition: color 0.2s
 }
 
 nav a:hover {
-    color: #bbb;
+    color: #bbb
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
-    padding: 5px 5px;
+    padding: 5px 5px
 }
 
 .dropdown-content {
@@ -72,7 +104,7 @@ nav a:hover {
     z-index: 1;
     left: 0;
     border-radius: 4px;
-    padding: 10px 10px;
+    padding: 10px 10px
 }
 
 .dropdown-content a {
@@ -81,26 +113,46 @@ nav a:hover {
     display: block;
     transition: background-color 0.3s;
     padding: 10px 10px;
-    margin-left: -2.5px;
+    font-size: 30px;
+    margin-left: -2.5px
 }
 
 .dropdown-content a:hover {
-    background-color: #555;
+    font-size: 38px;
+    background-color: #555
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    display: block
 }
 
 iframe {
     margin-top: 60px;
     width: 100%;
     height: calc(100vh - 60px);
-    border: none;
+    border: none
 }
 
-.image {
-    width: 400px;
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start
+}
+
+.image-wrapper {
+    flex: 0 0 auto;
+    margin-right: 20px;
+    text-align: center;
+}
+
+img {
+    width: 300px;
     height: auto;
-    margin: 0 20px 20px 0;
+    margin-bottom: 15px;
+    margin-left: 15px
+}
+
+.image-wrapper a {
+    display: block;
+    text-align: center;
 }
