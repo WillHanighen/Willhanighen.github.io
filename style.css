@@ -140,24 +140,28 @@ iframe {
 .image-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start
+    justify-content: flex-start;
 }
 
 .image-wrapper {
     flex: 0 0 auto;
     margin-right: 20px;
-    text-align: center
+    text-align: left;
 }
 
 img {
     width: 300px;
     height: auto;
     margin-bottom: 15px;
-    margin-left: 15px
+    margin-left: 15px;
 }
 
+.image-wrapper p,
 .image-wrapper a {
     display: block;
-    text-align: center;
-    margin-left: -25px
+    text-align: left;
+}
+
+html{
+    scroll-behavior: smooth;
 }
