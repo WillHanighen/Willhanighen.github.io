@@ -36,9 +36,9 @@ body {
 }
 
 .container h1 {
-    margin-left: 25px;
+    margin-left: 35px;
     line-height: 1.65;
-    font-size: 40px
+    font-size: 35px
 }
 
 .container h2 {
@@ -47,10 +47,18 @@ body {
     font-size: 30px
 }
 
-.container li {
+.container h3 {
     margin-left: 25px;
-    line-height: 1.65px;
-    font-size: 17px
+    line-height: 1.65;
+    font-size: 25px
+}
+
+.container ul {
+    margin-left: 25px
+}
+
+.container strong {
+    font-size: 25px
 }
 
 header {
