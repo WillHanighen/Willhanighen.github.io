@@ -249,3 +249,31 @@ img {
     pointer-events: none;
     z-index: 9999
 }
+
+li {
+    margin-left: 25px;
+}
+
+li a {
+    margin-left: 0px !important;
+}
+
+#gotop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #727272;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: opacity 0.2s, visibility 0.2s, height 0.2s
+}
+
+#gotop:hover {
+    background-color: #888888;
+}

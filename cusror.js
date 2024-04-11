@@ -22,6 +22,7 @@ function moveCursor(e) {
     innerCursor.style.background = 'white';
     innerCursor.style.width = '10px';
     innerCursor.style.height = '10px';
+innerCursor.style['mix-blend-mode'] = 'difference';
   }
 }
 
