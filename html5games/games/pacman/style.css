@@ -1,0 +1,29 @@
+{
+
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+
+}
+
+html, body {
+    min-height: 100vh;
+    max-width: 400px;
+    background-color: papayawhip; 
+    margin: 0 auto;
+}
+
+body {
+
+  align-content:space-around;
+  background-color:#545f5f;
+  color:#FBF5F3;
+  display:grid;
+  justify-content:center;
+
+}
+
+@font-face {
+    font-family: 'ArcadeFont';
+    src: 'ARCADECLASSIS.TTF';
+}
