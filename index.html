@@ -1,76 +1,37 @@
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Will Hanighen | Amateur Programmer and Aquarium Enthusiast</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="icon" type="image/ico" href="icon.ico">
-    </head>
-    <body>
-        <div class="inner-cursor"></div>
-        <div class="outer-cursor"></div>
-        <script src="trail.js"></script>
-        <script src="cusror.js"></script>
-        <button onclick="goTop()" id="gotop" title="Go to top">Go to page top</button>
-        <script src="gotop.js"></script>
-        <div class="container" id="top">
-            <header>
-                <div class="header">
-                    <div class="dropdown">
-                        <span>Will Hanighen | Amateur Programmer and Aquarium Enthusiast</span>
-                        <div class="dropdown-content">
-                            <a href="/index.html">Main</a>
-                            <a href="/blogs.html">Blogs</a>
-                            <a href="/resume.html">Resume</a>
-                            <a href="/contact.html">Contact Info</a>
-                            <a href="/html5games/index.html">HTML5 games</a>
-                        </div>
-                    </div>
-                </div>
-            </header>
-            <br><br>
-            <h1>Welcome to My Website!</h1>
-            <h4>If you are visiting my website for the first time and are confused as to how to get arround, hover your mouse cursor over the headder and select from the dropdown menu.</h4>
-            <p>Hi! I'm Will Hanighen, an amateur programmer and aquarium enthusiast.</p>
-            <section>
-                <h2>Programming Projects</h2>
-                <p>Check out some of my coding projects:</p>
-                <ul>
-                    <li>
-                        <a href="https://github.com/willhanighenschool" target="_blank" rel="noopener noreferrer">School githubaccount</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/willhanighen" target="_blank" rel="noopener noreferrer">Main github account</a>
-                    </li>
-                    <li>
-                        <a href="https://replit.com/@WillHanighen" target="_blank" rel="noopener noreferrer">School Replit account (unable to create new repls due to new limitations)</a>
-                    </li>
-                    <li>
-                        <a href="/html5games/index.html">My HTML5 game site</a>
-                    </li>
-                </ul>
-            </section>
-            <section>
-                <h2>Aquarium Gallery</h2>
-                <div class="image-container">
-                    <div class="image-wrapper">
-                        <img src="img/ICBM.png" alt="Betta tank"><a href="https://docs.google.com/document/d/1K6eg-FDqM4MBJlLj8Hg6s4tQ2_rR9wu5ENhRcIIWJe0/edit" target="_blank" rel="noopener noreferrer">Betta tank | shopping list</a>
-                    </div>
-                    <div class="image-wrapper">
-                        <img src="img/placeholder.png" alt="This is a placeholder">
-                        <p>This is a development placehholder</p>
-                    </div>
-                    <!-- add more as needed (use div class immage-wrapper) -->
-                </div>
-                <h2>Other photos</h2>
-                <div class="image-container">
-                    <div class="image-wrapper">
-                        <img src="img/placeholder.png" alt="This is a placeholder">
-                        <p>more artifacts from development</p>
-                    </div>
-                    <!-- add more as needed (use div class immage-wrapper) -->
-                </div>
-            </section>
-        </div>
-    </body>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Will Hanighen | Amateur Programmer</title>
+  <link rel="icon" href="/imgs/favicon.ico" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="/js/ab-particles.min.js"></script>
+  <!-- Source: https://www.cssscript.com/demo/particle-animations-ab/ -->
+  <script src="/js/typewriter-main.js"></script>
+  <link href="/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="particles(speed=15, avoidMouse=false, opacity=65)">
+  <div id="navbar-placeholder"></div>
+  <script src="/js/loadnavbar.js"></script>
+
+  <br><br><br><br><br><br>
+  <div class="typing-container">
+    <span>Will Hanighen, </span><span class="element"></span><br><br>
+  </div>
+
+  <div class="carousel-container">
+    <div class="carousel">
+      <img src="imgs/9th-grade-yearbook.jpg" alt="Will Hanighen" style="max-width: 400px; max-height: 400px; width: auto; height: auto;">
+      <img src=imgs/placeholder.jpg alt="placeholder"style="max-width: 400px; max-height: 400px; width: auto; height: auto;">
+      <img src=imgs/placeholder.jpg alt="placeholder"style="max-width: 400px; max-height: 400px; width: auto; height: auto;">
+      <img src=imgs/placeholder.jpg alt="placeholder"style="max-width: 400px; max-height: 400px; width: auto; height: auto;">
+      <img src=imgs/placeholder.jpg alt="placeholder"style="max-width: 400px; max-height: 400px; width: auto; height: auto;">
+      <img src=imgs/placeholder.jpg alt="placeholder"style="max-width: 400px; max-height: 400px; width: auto; height: auto;">
+  
+  <canvas id="particles"></canvas>
+</body>
+
 </html>

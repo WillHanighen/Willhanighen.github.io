@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Will Hanighen | Amateur Programmer</title>
+  <link rel="icon" href="/imgs/favicon.ico" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="/js/ab-particles.min.js"></script>
+  <!-- Source: https://www.cssscript.com/demo/particle-animations-ab/ -->
+  <link href="/css/style.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/skulpt/dist/skulpt.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/skulpt/dist/skulpt-stdlib.js"></script>
+</head>
+
+<body onload="particles(speed=15, avoidMouse=false, opacity=65)">
+  <div id="navbar-placeholder"></div>
+  <script src="/js/loadnavbar.js"></script>
+
+  <br><br><br><br>
+
+  <body>
+    <div class="container">
+      <div class="editor-container">
+        <h2>Python Code - Grade Calculator</h2>
+        <div id="editor"># grade calculator
+
+# import os
+
+def clear():
+#    if os.name == "nt":
+#        os.system("cls")
+#    else:
+#        os.system("clear")
+#
+# module OS is not available in Skulpt, pretend this clears the output
+
+  pass
+
+def get():
+    while True:
+        try:
+            one = float(input("How many points did you get?\nPoints scored: "))
+            clear()
+            two = float(input("What is the maximum total points?\nMax points: "))
+            clear()
+            break
+        except ValueError:
+            clear()
+            input("Error: Please enter a number.\nPress enter to continue...")
+            clear()
+
+    while one > two:
+        input("Error: Your score cannot be higher than the maximum points.\nPress enter to continue...")
+        clear()
+        while True:
+            try:
+                one = float(input("How many points did you get?\nPoints scored: "))
+                two = float(input("What is the maximum total points?\nMax points: "))
+                break
+            except ValueError:
+                input("Error: Please enter a number.\nPress enter to continue...")
+                clear()
+    result = one / two * 100
+    output = "You got a {:.2f}% ({:.2f}/{:.2f})".format(result, one, two)
+    if result >= 80:
+        print(output)
+    elif 70 <= result < 80:
+        print(output)
+    else:
+        print(output)
+    input("Press enter to continue...")
+    clear()
+
+#    while True:
+#        save_log = input("Do you want to save the output log? (Y/N): ")
+#        clear()
+#        if save_log.upper() == "Y":
+#            write_mode = "w"
+#            if os.path.exists("outputs.txt"):
+#                overwrite = input("Do you want to overwrite (O) the existing file or add (A) to it? (O/A): ")
+#                clear()
+#                if overwrite.upper() == "A":
+#                    write_mode = "a"
+#            with open("outputs.txt", write_mode, encoding="utf-8") as file:
+#                file.write(output + "\n")
+#            input("Log saved to outputs.txt\nPress enter to continue...")
+#            clear()
+#            break
+#        elif save_log.upper() == "N":
+#            break
+#        else:
+#            input("Please enter a valid response.\nPress enter to continue...")
+#
+# module OS is not available in Skulpt, pretend this saves the output to outputs.txt
+
+while True:
+    get()
+    response = input("Do you want to calculate again? (Y/N): ")
+    clear()
+
+    while response.upper() not in ("Y", "N"):
+        response = input("Please enter a valid response (Y/N): ")
+        clear()
+
+    if response.upper() == "N":
+        break
+
+while True:
+    wipe_file = input("Do you want to wipe the contents of outputs.txt? (Y/N): ")
+    clear()
+    if wipe_file.upper() == "Y":
+        with open("outputs.txt", "w"):
+            pass
+        print("Contents of outputs.txt wiped")
+        break
+    elif wipe_file.upper() == "N":
+        break
+    else:
+        print("Please enter a valid response (Y/N): ")
+
+input("Press enter to exit...")
+clear()
+
+  </div>
+        <br>
+        <button onclick="executeCode()">Run Code</button>
+      </div>
+      <div class="output-container">
+        <h2>Output</h2>
+        <div class="output-box">
+          <div class="display-area" id="output">
+            <!-- Output will appear here -->
+          </div>
+          <input type="text" placeholder="Type input here..." class="input-box" id="user-input" onkeydown="if(event.key === 'Enter') handleUserInput()" />
+          <div id="waiting-message" style="display: none;">Waiting for input...</div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <canvas id="particles"></canvas>
+  <script src="/js/python.js"></script>
+</body>
+
+</html>
