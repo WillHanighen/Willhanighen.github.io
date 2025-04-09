@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Will Hanighen | Grade Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grade Calculator | Will Hanighen</title>
   
   <!-- SEO Meta Tags -->
   <meta name="description" content="Grade Calculator Python application by Will Hanighen. Calculate your final grade based on assignments, tests, and other criteria.">
@@ -14,38 +14,77 @@
   <!-- Open Graph / Discord Embed Meta Tags -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://willhanighen.github.io/projects/python/grade-calc/">
-  <meta property="og:title" content="Will Hanighen | Grade Calculator">
+  <meta property="og:title" content="Grade Calculator | Will Hanighen">
   <meta property="og:description" content="Grade Calculator Python application by Will Hanighen. Calculate your final grade based on assignments, tests, and other criteria.">
   <meta property="og:image" content="https://willhanighen.github.io/generated-icon.png">
   
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://willhanighen.github.io/projects/python/grade-calc/">
-  <meta name="twitter:title" content="Will Hanighen | Grade Calculator">
+  <meta name="twitter:title" content="Grade Calculator | Will Hanighen">
   <meta name="twitter:description" content="Grade Calculator Python application by Will Hanighen. Calculate your final grade based on assignments, tests, and other criteria.">
   <meta name="twitter:image" content="https://willhanighen.github.io/generated-icon.png">
   
+  <!-- Favicon -->
   <link rel="icon" href="/imgs/favicon.ico" type="image/x-icon">
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="/js/ab-particles.min.js"></script>
-  <!-- Source: https://www.cssscript.com/demo/particle-animations-ab/ -->
-  <link href="/css/style.css" rel="stylesheet" type="text/css" />
+  <script src="/js/background.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/skulpt/dist/skulpt.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/skulpt/dist/skulpt-stdlib.js"></script>
+  
+  <!-- Modern CSS -->
+  <link href="/css/modern-style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body onload="particles(speed=15, avoidMouse=false, opacity=65)">
+<body onload="particles({speed: 15, avoidMouse: false, opacity: 65})">
+  <!-- Navigation -->
   <div id="navbar-placeholder"></div>
-  <script src="/js/loadnavbar.js"></script>
+  <script src="/js/loadnavbar-modern.js"></script>
 
-  <br><br><br><br>
+  <!-- Page Header -->
+  <div class="hero-section" style="min-height: 40vh;">
+    <h1 class="fade-in">Grade Calculator</h1>
+    <div class="hero-description fade-in">
+      A Python application to calculate your grade percentage based on points earned and total possible points.
+    </div>
+  </div>
 
-  <body>
-    <div class="container">
+  <!-- Content Section -->
+  <div class="content-section">
+    <section class="fade-in">
+      <h2>Project Details</h2>
+      <div class="project-card full-width">
+        <img src="/imgs/grade-calc.jpg" alt="Grade Calculator Project" onerror="this.src='/imgs/placeholder.jpg'" class="project-header-img">
+        <div class="project-content">
+          <h3>About This Project</h3>
+          <p>This is a simple grade calculator built in Python. It allows you to:</p>
+          <ul>
+            <li>Calculate your grade percentage based on points earned and total possible points</li>
+            <li>See your score formatted with proper precision</li>
+            <li>Calculate multiple grades in a single session</li>
+          </ul>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Academic</span>
+            <span class="project-tag">Utility</span>
+          </div>
+          <div class="project-links">
+            <a href="/projects/python/" class="cta-button"><i class="fas fa-arrow-left"></i> Back to Python Projects</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <div class="code-container fade-in">
       <div class="editor-container">
-        <h2>Python Code - Grade Calculator</h2>
-        <div id="editor"># grade calculator
+        <h2><i class="fas fa-code"></i> Python Code</h2>
+        <div id="editor" class="code-editor"># grade calculator
 
 # import os
 
@@ -114,7 +153,9 @@ def get():
 #        else:
 #            input("Please enter a valid response.\nPress enter to continue...")
 #
-# module OS is not available in Skulpt, pretend this saves the output to outputs.txt
+# Note: File operations don't work in the browser environment.
+# The module OS is not available in Skulpt, and file operations like open() will cause errors.
+# This functionality would work in a desktop Python environment but is disabled for browser compatibility.
 
 while True:
     get()
@@ -128,41 +169,504 @@ while True:
     if response.upper() == "N":
         break
 
-while True:
-    wipe_file = input("Do you want to wipe the contents of outputs.txt? (Y/N): ")
-    clear()
-    if wipe_file.upper() == "Y":
-        with open("outputs.txt", "w"):
-            pass
-        print("Contents of outputs.txt wiped")
-        break
-    elif wipe_file.upper() == "N":
-        break
-    else:
-        print("Please enter a valid response (Y/N): ")
+# Note: File operations don't work in the browser environment
+# The following code is commented out as it would cause errors when ran in the browser
+#
+# while True:
+#     wipe_file = input("Do you want to wipe the contents of outputs.txt? (Y/N): ")
+#     clear()
+#     if wipe_file.upper() == "Y":
+#         with open("outputs.txt", "w"):
+#             pass
+#         print("Contents of outputs.txt wiped")
+#         break
+#     elif wipe_file.upper() == "N":
+#         break
+#     else:
+#         print("Please enter a valid response (Y/N): ")
 
 input("Press enter to exit...")
 clear()
 
   </div>
-        <br>
-        <button onclick="executeCode()">Run Code</button>
+
+        <div class="button-container">
+          <button onclick="executeCode()" class="run-button"><i class="fas fa-play"></i> Run Code</button>
+        </div>
       </div>
+      
       <div class="output-container">
-        <h2>Output</h2>
+        <h2><i class="fas fa-terminal"></i> Output</h2>
         <div class="output-box">
           <div class="display-area" id="output">
             <!-- Output will appear here -->
+            <div class="output-placeholder">Click "Run Code" to see the program output here</div>
           </div>
-          <input type="text" placeholder="Type input here..." class="input-box" id="user-input" onkeydown="if(event.key === 'Enter') handleUserInput()" />
-          <div id="waiting-message" style="display: none;">Waiting for input...</div>
+          <div class="input-container">
+            <input type="text" placeholder="Type input here..." class="input-box" id="user-input" onkeydown="if(event.key === 'Enter') handleUserInput()" />
+            <div id="waiting-message">Waiting for input...</div>
+          </div>
         </div>
       </div>
     </div>
-  </body>
+    
+    <div class="project-explanation fade-in">
+      <h2><i class="fas fa-lightbulb"></i> How It Works</h2>
+      <p>This program uses a simple formula to calculate your grade percentage:</p>
+      
+      <div class="formula-grid">
+        <div class="formula-card">
+          <h3>Grade Percentage</h3>
+          <div class="formula">Grade % = (Points Earned / Total Points) × 100</div>
+        </div>
+      </div>
+      
+      <p>The calculator handles various error cases:</p>
+      <ul>
+        <li>Non-numeric inputs are rejected with an error message</li>
+        <li>The program allows you to calculate multiple grades in a single session</li>
+        <li>Results are formatted with two decimal places for precision</li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+  <script src="/js/loadfooter.js"></script>
 
+  <!-- Background particles -->
   <canvas id="particles"></canvas>
+  
+  <!-- Site Utilities -->
+  <script src="/js/site-utils.js"></script>
   <script src="/js/python.js"></script>
+  
+  <!-- Additional CSS for Python project pages -->
+  <style>
+    .code-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    
+    @media (min-width: 992px) {
+      .code-container {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    
+    .editor-container, .output-container {
+      background-color: var(--card-bg);
+      border-radius: var(--border-radius);
+      padding: 1.5rem;
+      box-shadow: var(--box-shadow);
+    }
+    
+    .editor-container h2, .output-container h2 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      color: var(--primary-color);
+    }
+    
+    .editor-container h2 i, .output-container h2 i {
+      margin-right: 0.75rem;
+    }
+    
+    .code-editor {
+      height: 400px;
+      border-radius: 4px;
+      font-size: 14px;
+      margin-bottom: 1rem;
+    }
+    
+    .button-container {
+      display: flex;
+      justify-content: flex-end;
+    }
+    
+    .run-button {
+      background-color: var(--primary-color);
+      color: var(--dark-bg);
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      font-weight: 500;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      transition: background-color var(--transition-speed) ease;
+    }
+    
+    .run-button i {
+      margin-right: 0.5rem;
+    }
+    
+    .run-button:hover {
+      background-color: var(--primary-hover);
+    }
+    
+    .output-box {
+      background-color: var(--dark-bg);
+      border-radius: 4px;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .display-area {
+      flex-grow: 1;
+      padding: 1rem;
+      overflow-y: auto;
+      font-family: 'Roboto Mono', monospace;
+      white-space: pre-wrap;
+      color: var(--light-text);
+    }
+    
+    .output-placeholder {
+      color: var(--muted-text);
+      text-align: center;
+      margin-top: 2rem;
+    }
+    
+    .input-container {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .input-box {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: none;
+      border-top: 1px solid var(--border-color);
+      padding: 0.75rem 1rem;
+      color: var(--light-text);
+      font-family: 'Roboto Mono', monospace;
+    }
+    
+    .input-box:focus {
+      outline: none;
+    }
+    
+    #waiting-message {
+      background-color: rgba(58, 134, 255, 0.2);
+      color: var(--primary-color);
+      padding: 0.5rem 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      display: none;
+    }
+    
+    .project-info {
+      background-color: var(--card-bg);
+      border-radius: var(--border-radius);
+      padding: 1.5rem;
+      box-shadow: var(--box-shadow);
+    }
+    
+    .project-info h2 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      color: var(--primary-color);
+    }
+    
+    .project-info h2 i {
+      margin-right: 0.75rem;
+    }
+    
+    .project-info ul {
+      margin-bottom: 1.5rem;
+      padding-left: 1.5rem;
+    }
+    
+    .project-info li {
+      margin-bottom: 0.5rem;
+      color: var(--muted-text);
+    }
+    
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1.5rem;
+    }
+    
+    .project-tag {
+      background-color: var(--dark-bg);
+      color: var(--primary-color);
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+    }
+    
+    .project-explanation {
+      margin-top: 3rem;
+    }
+    
+    .project-explanation h2 {
+      display: flex;
+      align-items: center;
+      color: var(--primary-color);
+    }
+    
+    .project-explanation h2 i {
+      margin-right: 0.75rem;
+    }
+    
+    .formula-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .formula-card {
+      background-color: var(--card-bg);
+      border-radius: var(--border-radius);
+      padding: 1.5rem;
+      box-shadow: var(--box-shadow);
+    }
+    
+    .formula-card h3 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      color: var(--light-text);
+      font-size: 1.1rem;
+    }
+    
+    .formula {
+      font-family: 'Roboto Mono', monospace;
+      background-color: rgba(58, 134, 255, 0.1);
+      padding: 1rem;
+      border-radius: 4px;
+      color: var(--primary-color);
+      text-align: center;
+    }
+    
+    .back-button-container {
+      margin-top: 1.5rem;
+    }
+    
+    .back-button {
+      display: inline-flex;
+      align-items: center;
+      background-color: var(--primary-color);
+      color: var(--dark-bg);
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background-color var(--transition-speed) ease;
+    }
+    
+    .back-button i {
+      margin-right: 0.5rem;
+    }
+    
+    .back-button:hover {
+      background-color: var(--primary-hover);
+      color: var(--dark-bg);
+    }
+  </style>
+
+  <script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/monokai");
+    editor.session.setMode("ace/mode/python");
+    editor.setFontSize(14);
+    editor.setShowPrintMargin(false);
+
+    // Input handling for Skulpt
+    var inputBuffer = [];
+    var waitingForInput = false;
+    var resolveInputPromise = null;
+
+    function handleUserInput() {
+      var inputField = document.getElementById("user-input");
+      var input = inputField.value;
+      inputField.value = "";
+      
+      if (waitingForInput && resolveInputPromise) {
+        // Add the input to the output display
+        var output = document.getElementById("output");
+        output.innerHTML += input + "\n";
+        
+        // Hide waiting message
+        document.getElementById("waiting-message").style.display = "none";
+        
+        // Resolve the promise with the input
+        resolveInputPromise(input);
+        waitingForInput = false;
+        resolveInputPromise = null;
+      }
+    }
+
+    function outf(text) {
+      var output = document.getElementById("output");
+      output.innerHTML += text;
+      output.scrollTop = output.scrollHeight; // Auto-scroll to bottom
+    }
+
+    function builtinRead(x) {
+      if (Sk.builtinFiles === undefined || Sk.builtinFiles["files"][x] === undefined)
+        throw "File not found: '" + x + "'";
+      return Sk.builtinFiles["files"][x];
+    }
+
+    function executeCode() {
+      var prog = editor.getValue();
+      var output = document.getElementById("output");
+      output.innerHTML = '';
+      Sk.pre = "output";
+      
+      // Configure input function
+      Sk.configure({
+        output: outf,
+        read: builtinRead,
+        __future__: Sk.python3,
+        inputfun: function() {
+          return new Promise(function(resolve) {
+            waitingForInput = true;
+            resolveInputPromise = resolve;
+            document.getElementById("waiting-message").style.display = "block";
+            document.getElementById("user-input").focus();
+          });
+        }
+      });
+      
+      // Show loading indicator
+      output.innerHTML = '<div class="loading"><i class="fas fa-spinner fa-spin"></i> Running code...</div>';
+      
+      var myPromise = Sk.misceval.asyncToPromise(function() {
+        return Sk.importMainWithBody("<stdin>", false, prog, true);
+      });
+      
+      myPromise.then(function(mod) {
+        // Remove loading indicator if still present
+        var loading = output.querySelector('.loading');
+        if (loading) output.removeChild(loading);
+        console.log('success');
+      },
+      function(err) {
+        // Remove loading indicator if still present
+        var loading = output.querySelector('.loading');
+        if (loading) output.removeChild(loading);
+        
+        console.log(err.toString());
+        output.innerHTML += '<div class="error-message"><i class="fas fa-exclamation-triangle"></i> ' + err.toString() + '</div>';
+      });
+    }
+
+    // Add Run and Reset button functionality
+    document.querySelector('.card-actions .cta-button').addEventListener("click", executeCode);
+    document.querySelector('.card-actions .outline').addEventListener("click", function() {
+      var output = document.getElementById("output");
+      output.innerHTML = '';
+    });
+    
+    // Add custom styles for the editor and output
+    document.head.insertAdjacentHTML('beforeend', `
+      <style>
+        .code-editor {
+          height: 500px;
+          border-radius: var(--border-radius-sm);
+          margin-bottom: 1rem;
+          border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .code-output {
+          min-height: 300px;
+          max-height: 500px;
+          overflow-y: auto;
+          background-color: #1e1e2e;
+          color: #f8f8f2;
+          font-family: monospace;
+          padding: 1rem;
+          border-radius: var(--border-radius-sm);
+          white-space: pre-wrap;
+          border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .input-container {
+          display: flex;
+          align-items: center;
+          margin-top: 1rem;
+          position: relative;
+        }
+        
+        .input-box {
+          width: 100%;
+          padding: 0.75rem 1rem;
+          background-color: #2d2d44;
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          border-radius: var(--border-radius-sm);
+          color: var(--light-text);
+          font-family: monospace;
+        }
+        
+        #waiting-message {
+          position: absolute;
+          right: 1rem;
+          color: var(--muted-text);
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+        }
+        
+        .error-message {
+          color: #ff5555;
+          padding: 0.5rem;
+          margin-top: 0.5rem;
+          background-color: rgba(255, 85, 85, 0.1);
+          border-radius: var(--border-radius-sm);
+          border-left: 3px solid #ff5555;
+        }
+        
+        .loading {
+          text-align: center;
+          padding: 2rem;
+          color: var(--muted-text);
+        }
+        
+        .loading i {
+          margin-right: 0.5rem;
+        }
+        
+        .card-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 1rem;
+          padding-bottom: 0.5rem;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .card-header h2, .card-header h3 {
+          margin: 0;
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+        }
+        
+        .card-actions {
+          display: flex;
+          gap: 0.5rem;
+        }
+        
+        .project-info ul {
+          margin-left: 1.5rem;
+          margin-bottom: 1.5rem;
+        }
+        
+        .project-info li {
+          margin-bottom: 0.5rem;
+        }
+      </style>
+    `);
+  </script>
 </body>
 
 </html>

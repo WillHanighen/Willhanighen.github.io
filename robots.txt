@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://willhanighen.github.io/sitemap.xml

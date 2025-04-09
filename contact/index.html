@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Will Hanighen | Contact</title>
   
   <!-- SEO Meta Tags -->
@@ -25,49 +25,190 @@
   <meta name="twitter:description" content="Contact Will Hanighen, amateur programmer and developer. Get in touch for collaborations, questions, or feedback.">
   <meta name="twitter:image" content="https://willhanighen.github.io/generated-icon.png">
   
+  <!-- Favicon -->
   <link rel="icon" href="/imgs/favicon.ico" type="image/x-icon">
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="/js/ab-particles.min.js"></script>
-  <!-- Source: https://www.cssscript.com/demo/particle-animations-ab/ -->
-  <script src="/js/typewriter-main.js"></script>
-  <link href="/css/style.css" rel="stylesheet" type="text/css" />
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Scripts -->
+  <script src="/js/background.js"></script>
+  
+  <!-- Modern CSS -->
+  <link href="/css/modern-style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body onload="particles(speed=15, avoidMouse=false, opacity=65)">
+<body onload="particles({speed: 15, avoidMouse: false, opacity: 65})">
+  <!-- Navigation -->
   <div id="navbar-placeholder"></div>
-  <script src="/js/loadnavbar.js"></script>
+  <script src="/js/loadnavbar-modern.js"></script>
 
-  <br><br><br><br><br><br>
-  
-  <section>
-    <h3>Contact Me</h3>
-    <ul>
-      <li>Home Email: <a href="mailto:willhanighen@gmail.com">willhanighen@gmail.com</a></li>
-      <li>School Email: <a href="mailto:whanighen@student.cottageschool.org">whanighen@student.cottageschool.org</a></li>
-      <li>Phone: <a href="tel:1-479-353-5587">+1 (479) 353-5587</a></li>
-      <!-- add more as needed -->
-    </ul>
-  </section>
+  <!-- Page Header -->
+  <div class="hero-section" style="min-height: 40vh;">
+    <h1 class="fade-in">Contact Me</h1>
+    <div class="hero-description fade-in">
+      Have a question or want to collaborate? Feel free to reach out using any of the contact methods below.
+    </div>
+  </div>
 
-  <section>
-    <h3>Contact My Mom</h3>
-    <ul>
-      <li>Name: Jean Hanighen</li>
-      <li>Email: <a href="mailto:jhanighen1@gmail.com">jhanighen1@gmail.com</a></li>
-      <li>Phone: <a href="tel:1-404-216-3716">+1 (404) 216-3716</a></li>
-    </ul>
-  </section>
+  <!-- Content Section -->
+  <div class="content-section">
+    <!-- Contact Info -->
+    <div class="projects-grid">
+      <!-- Personal Contact -->
+      <section class="fade-in">
+        <h2>My Contact Information</h2>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div class="contact-details">
+              <h3>Home Email</h3>
+              <a href="mailto:willhanighen@gmail.com">willhanighen@gmail.com</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fas fa-graduation-cap"></i>
+            <div class="contact-details">
+              <h3>School Email</h3>
+              <a href="mailto:whanighen@student.cottageschool.org">whanighen@student.cottageschool.org</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <div class="contact-details">
+              <h3>Phone</h3>
+              <a href="tel:1-479-353-5587">+1 (479) 353-5587</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Mom's Contact -->
+      <section class="fade-in">
+        <h2>Mom's Contact Information</h2>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-user"></i>
+            <div class="contact-details">
+              <h3>Name</h3>
+              <p>Jean Hanighen</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div class="contact-details">
+              <h3>Email</h3>
+              <a href="mailto:jhanighen1@gmail.com">jhanighen1@gmail.com</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <div class="contact-details">
+              <h3>Phone</h3>
+              <a href="tel:1-404-216-3716">+1 (404) 216-3716</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Dad's Contact -->
+      <section class="fade-in">
+        <h2>Dad's Contact Information</h2>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-user"></i>
+            <div class="contact-details">
+              <h3>Name</h3>
+              <p>John Hanighen</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div class="contact-details">
+              <h3>Email</h3>
+              <a href="mailto:johnhanighen@gmail.com">johnhanighen@gmail.com</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <div class="contact-details">
+              <h3>Phone</h3>
+              <a href="tel:1-248-228-6029">+1 (248) 228-6029</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
 
-  <section>
-    <h3>Contact My Dad</h3>
-    <ul>
-      <li>Name: John Hanighen</li>
-      <li>Email: <a href="mailto:johnhanighen@gmail.com">johnhanighen@gmail.com</a></li>
-      <li>Phone: <a href="tel:1-248-228-6029">+1 (248) 228-6029</a></li>
-    </ul>
-  </section>
-  
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+  <script src="/js/loadfooter.js"></script>
+
+  <!-- Background particles -->
   <canvas id="particles"></canvas>
+  
+  <!-- Additional CSS for contact page -->
+  <style>
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    
+    .contact-item i {
+      font-size: 1.5rem;
+      color: var(--primary-color);
+      margin-top: 0.25rem;
+    }
+    
+    .contact-details h3 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.2rem;
+      color: var(--light-text);
+    }
+    
+    .contact-details p,
+    .contact-details a {
+      margin: 0;
+      color: var(--muted-text);
+      text-decoration: none;
+      transition: color var(--transition-speed) ease;
+    }
+    
+    .contact-details a:hover {
+      color: var(--primary-color);
+    }
+  </style>
+  
+  <!-- Site Utilities -->
+  <script src="/js/site-utils.js"></script>
+  
+  <!-- Form validation -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Simple form validation
+      const form = document.querySelector('.contact-form');
+      if (form) {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          alert('Thank you for your message! This is a demo form and does not actually send messages yet.');
+        });
+      }
+    });
+  </script>
 </body>
 
 </html>

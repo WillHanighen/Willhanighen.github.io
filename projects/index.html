@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Will Hanighen | Amateur Programmer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will Hanighen | Projects</title>
   
   <!-- SEO Meta Tags -->
   <meta name="description" content="Projects portfolio of Will Hanighen, featuring Python applications and other programming projects.">
@@ -25,37 +25,150 @@
   <meta name="twitter:description" content="Projects portfolio of Will Hanighen, featuring Python applications and other programming projects.">
   <meta name="twitter:image" content="https://willhanighen.github.io/generated-icon.png">
   
+  <!-- Favicon -->
   <link rel="icon" href="/imgs/favicon.ico" type="image/x-icon">
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="/js/ab-particles.min.js"></script>
-  <!-- Source: https://www.cssscript.com/demo/particle-animations-ab/ -->
-  <script src="/js/typewriter-main.js"></script>
-  <link href="/css/style.css" rel="stylesheet" type="text/css" />
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Scripts -->
+  <script src="/js/background.js"></script>
+  
+  <!-- Modern CSS -->
+  <link href="/css/modern-style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body onload="particles(speed=15, avoidMouse=false, opacity=65)">
+<body onload="particles({speed: 15, avoidMouse: false, opacity: 65})">
+  <!-- Navigation -->
   <div id="navbar-placeholder"></div>
-  <script src="/js/loadnavbar.js"></script>
+  <script src="/js/loadnavbar-modern.js"></script>
 
-  <br><br><br><br><br><br>
+  <!-- Page Header -->
+  <div class="hero-section" style="min-height: 40vh;">
+    <h1 class="fade-in">My Projects</h1>
+    <div class="hero-description fade-in">
+      Explore my programming projects and applications. Here you'll find various projects I've worked on, primarily using Python.
+    </div>
+  </div>
 
-  <section>
-    <h3>Python Projects</h3>
-    <ul>
-      <li><a href="/projects/python">Python Project Page</a></li>
-      <li><a href="/projects/python/temp-converter">Temprature Converter</a></li>
-      <li><a href="/projects/python/grade-calc">Grade Calculator</a></li>
-    </ul>
-  </section>
+  <!-- Content Section -->
+  <div class="content-section">
+    <!-- Python Projects -->
+    <section class="fade-in">
+      <h2>Python Projects</h2>
+      <div class="projects-grid">
+        <!-- Temperature Converter -->
+        <div class="project-card">
+          <img src="/imgs/temp-converter.jpg" alt="Temperature Converter Project" onerror="this.src='/imgs/placeholder.jpg'">
+          <div class="project-content">
+            <h3>Temperature Converter</h3>
+            <p>A Python application that converts between different temperature units including Celsius, Fahrenheit, and Kelvin.</p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Web</span>
+              <span class="project-tag">Utility</span>
+            </div>
+            <div class="project-links">
+              <a href="/projects/python/temp-converter" class="cta-button">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Grade Calculator -->
+        <div class="project-card">
+          <img src="/imgs/grade-calc.jpg" alt="Grade Calculator Project" onerror="this.src='/imgs/placeholder.jpg'">
+          <div class="project-content">
+            <h3>Grade Calculator</h3>
+            <p>A tool to calculate final grades based on assignments, tests, and other academic criteria.</p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Education</span>
+              <span class="project-tag">Tool</span>
+            </div>
+            <div class="project-links">
+              <a href="/projects/python/grade-calc" class="cta-button">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Tic-Tac-Toe -->
+        <div class="project-card">
+          <img src="/imgs/tic-tac-toe.jpg" alt="Tic-Tac-Toe Project" onerror="this.src='/imgs/placeholder.jpg'">
+          <div class="project-content">
+            <h3>Tic-Tac-Toe</h3>
+            <p>A classic game of Tic-Tac-Toe implemented in Python with an interactive interface.</p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Game</span>
+              <span class="project-tag">Interactive</span>
+            </div>
+            <div class="project-links">
+              <a href="/projects/python/tic-tac-toe" class="cta-button">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="cta-buttons" style="margin-top: 2rem;">
+        <a href="/projects/python" class="cta-button">View All Python Projects</a>
+      </div>
+    </section>
 
-  <section>
-    <h3>Other Projects</h3>
-    <ul>
-      <li>N/A</li>
-    </ul>
-  </section>
+    <!-- Web Development Projects -->
+    <section class="fade-in">
+      <h2>Web Development Projects</h2>
+      <div class="projects-grid">
+        <!-- Personal Portfolio -->
+        <div class="project-card">
+          <img src="/imgs/portfolio.jpg" alt="Personal Portfolio Project" onerror="this.src='/imgs/placeholder.jpg'">
+          <div class="project-content">
+            <h3>Personal Portfolio</h3>
+            <p>A responsive personal portfolio website built with HTML5, CSS3, and minimal JavaScript for smooth animations.</p>
+            <div class="project-tags">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">Responsive</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="cta-button">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="cta-buttons" style="margin-top: 2rem;">
+        <a href="/projects/web" class="cta-button">View All Web Projects</a>
+      </div>
+    </section>
+    
+    <!-- Future Projects Section -->
+    <section class="fade-in">
+      <h2>Coming Soon</h2>
+      <p>I'm constantly working on new projects. Check back later for more exciting applications and tools!</p>
+      
+      <div class="project-card" style="max-width: 500px; margin-top: 1.5rem;">
+        <div class="project-content" style="text-align: center;">
+          <i class="fas fa-code" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+          <h3>Have a project idea?</h3>
+          <p>If you have suggestions for projects or would like to collaborate, feel free to reach out!</p>
+          <div class="project-links" style="justify-content: center;">
+            <a href="/contact" class="cta-button">Contact Me <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+  <script src="/js/loadfooter.js"></script>
+
+  <!-- Background particles -->
   <canvas id="particles"></canvas>
+  
+  <!-- Site Utilities -->
+  <script src="/js/site-utils.js"></script>
 </body>
 
 </html>

@@ -1,27 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Will Hanighen | Amateur Programmer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found | Will Hanighen</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Page not found on Will Hanighen's portfolio website.">
+  <meta name="author" content="Will Hanighen">
+  
+  <!-- Open Graph / Discord Embed Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://willhanighen.github.io/404">
+  <meta property="og:title" content="404 - Page Not Found | Will Hanighen">
+  <meta property="og:description" content="Page not found on Will Hanighen's portfolio website.">
+  <meta property="og:image" content="https://willhanighen.github.io/generated-icon.png">
+  
+  <!-- Favicon -->
   <link rel="icon" href="/imgs/favicon.ico" type="image/x-icon">
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="/js/ab-particles.min.js"></script>
-  <!-- Source: https://www.cssscript.com/demo/particle-animations-ab/ -->
+  <script src="/js/background.js"></script>
   <script src="/js/typewriter-404.js"></script>
-  <link href="/css/style.css" rel="stylesheet" type="text/css" />
+  
+  <!-- Modern CSS -->
+  <link href="/css/modern-style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body onload="particles(speed=15, avoidMouse=false, opacity=65)">
+<body onload="particles({speed: 15, avoidMouse: false, opacity: 65})">
+  <!-- Navigation -->
   <div id="navbar-placeholder"></div>
-  <script src="/js/loadnavbar.js"></script>
+  <script src="/js/loadnavbar-modern.js"></script>
 
-  <br><br><br><br><br><br>
-  <div class="typing-container">
-    <span>Error 404, </span><span class="element"></span><br><br>
+  <!-- 404 Content -->
+  <div class="error-container">
+    <div class="error-content fade-in">
+      <div class="error-code">404</div>
+      <h1>Page Not Found</h1>
+      <div class="typing-container">
+        <span>Please </span><span class="element"></span>
+      </div>
+      <div class="error-actions">
+        <a href="/" class="cta-button"><i class="fas fa-home"></i> Back to Home</a>
+        <a href="/projects" class="cta-button outline"><i class="fas fa-code"></i> View Projects</a>
+      </div>
+    </div>
   </div>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+  <script src="/js/loadfooter.js"></script>
+
+  <!-- Background particles -->
   <canvas id="particles"></canvas>
+  
+  <!-- Site Utilities -->
+  <script src="/js/site-utils.js"></script>
+  
+  <!-- Additional CSS for 404 page -->
+  <style>
+    .error-container {
+      min-height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+    
+    .error-content {
+      text-align: center;
+      max-width: 600px;
+      background-color: rgba(26, 26, 46, 0.8);
+      padding: 3rem;
+      border-radius: var(--border-radius);
+      box-shadow: var(--box-shadow);
+    }
+    
+    .error-code {
+      font-size: 8rem;
+      font-weight: 700;
+      color: var(--primary-color);
+      line-height: 1;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 10px rgba(58, 134, 255, 0.5);
+    }
+    
+    .error-content h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--light-text);
+    }
+    
+    .typing-container {
+      font-size: 1.2rem;
+      color: var(--muted-text);
+      min-height: 80px;
+      margin-bottom: 2rem;
+    }
+    
+    .error-actions {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    
+    .error-actions .cta-button {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    @media (max-width: 768px) {
+      .error-code {
+        font-size: 6rem;
+      }
+      
+      .error-content h1 {
+        font-size: 2rem;
+      }
+      
+      .typing-container {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </body>
 
 </html>

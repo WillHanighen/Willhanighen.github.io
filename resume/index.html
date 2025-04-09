@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Will Hanighen | Resume</title>
   
   <!-- SEO Meta Tags -->
@@ -25,64 +25,368 @@
   <meta name="twitter:description" content="Resume of Will Hanighen, amateur programmer and developer. View education, skills, experience, and qualifications.">
   <meta name="twitter:image" content="https://willhanighen.github.io/generated-icon.png">
   
+  <!-- Favicon -->
   <link rel="icon" href="/imgs/favicon.ico" type="image/x-icon">
-  <script src="/js/ab-particles.min.js"></script>
-  <!-- Source: https://www.cssscript.com/demo/particle-animations-ab/ -->
-  <link href="/css/style.css" rel="stylesheet" type="text/css" />
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Scripts -->
+  <script src="/js/background.js"></script>
+  
+  <!-- Modern CSS -->
+  <link href="/css/modern-style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body onload="particles(speed=15, avoidMouse=false, opacity=65)">
+<body onload="particles({speed: 5, avoidMouse: false, opacity: 65})">
+  <!-- Navigation -->
   <div id="navbar-placeholder"></div>
-  <script src="/js/loadnavbar.js"></script>
+  <script src="/js/loadnavbar-modern.js"></script>
 
-  <br><br><br><br><br><br>
+  <!-- Page Header -->
+  <div class="hero-section" style="min-height: 40vh;">
+    <h1 class="fade-in">My Resume</h1>
+    <div class="hero-description fade-in">
+      A summary of my education, skills, and projects.
+    </div>
+    <div class="hero-buttons fade-in">
+      <a href="#" class="btn btn-primary"><i class="fas fa-download"></i> Download PDF</a>
+      <a href="/contact" class="btn btn-secondary"><i class="fas fa-envelope"></i> Contact Me</a>
+    </div>
+  </div>
 
-  <section>
-    <h3>Education</h3>
-    <ul>
-        <li>Middle/JR High: <a href="https://cottageschool.org" target="_blank" rel="noopener noreferrer">The Cottage School</a></li>
-        <li>Highschool: <a href="https://cottageschool.org" target="_blank" rel="noopener noreferrer">The Cottage School</a></li>
-        <li>Collage/Higher Education: <a href="about:blank" target="_blank" rel="noopener noreferrer">N/A</a></li>
-        <!-- add more as needed -->
-    </ul>
-  </section>
+  <!-- Content Section -->
+  <div class="content-section">
+    <!-- Resume Content -->
+    <div class="resume-container">
+      <!-- Education Section -->
+      <section class="resume-section fade-in">
+        <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+        <div class="resume-content">
+          <div class="resume-item">
+            <div class="resume-item-header">
+              <h3>The Cottage School</h3>
+              <span class="resume-date">Present</span>
+            </div>
+            <p class="resume-subtitle">High School</p>
+            <ul class="resume-list">
+              <li>Focusing on computer science and programming</li>
+              <li>Participating in coding clubs and technology-related activities</li>
+            </ul>
+          </div>
+          
+          <div class="resume-item">
+            <div class="resume-item-header">
+              <h3>The Cottage School</h3>
+              <span class="resume-date">Completed</span>
+            </div>
+            <p class="resume-subtitle">Middle/JR High School</p>
+          </div>
+          
+          <div class="resume-item">
+            <div class="resume-item-header">
+              <h3>College/Higher Education</h3>
+              <span class="resume-date">Future</span>
+            </div>
+            <p class="resume-subtitle">Not Applicable Yet</p>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Work Experience Section -->
+      <section class="resume-section fade-in">
+        <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
+        <div class="resume-content">
+          <div class="resume-item">
+            <p class="resume-subtitle">Currently focusing on education and skill development</p>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Skills Section -->
+      <section class="resume-section fade-in">
+        <h2><i class="fas fa-code"></i> Skills</h2>
+        <div class="resume-content">
+          <div class="skills-container">
+            <div class="skill-category">
+              <h3>Programming Languages</h3>
+              <p>Languages in order of most experience:</p>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <span class="skill-name">Python</span>
+                  <div class="skill-bar">
+                    <div class="skill-level" style="width: 85%;"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">HTML, CSS and JS</span>
+                  <div class="skill-bar">
+                    <div class="skill-level" style="width: 60%;"></div>
+                  </div>
+                  <span class="skill-note">*some experience</span>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">C#</span>
+                  <div class="skill-bar">
+                    <div class="skill-level" style="width: 40%;"></div>
+                  </div>
+                  <span class="skill-note">*minimal experience</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="skill-category">
+              <h3>Other Skills</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Fishkeeping</span>
+                <span class="skill-tag">3D Printing</span>
+                <span class="skill-tag">Web Development</span>
+                <span class="skill-tag">Problem Solving</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Projects Section -->
+      <section class="resume-section fade-in">
+        <h2><i class="fas fa-laptop-code"></i> Projects</h2>
+        <div class="resume-content">
+          <div class="projects-grid resume-projects">
+            <div class="project-card">
+              <div class="project-content">
+                <h3>Temperature Converter</h3>
+                <p>A Python application that converts temperatures between different units.</p>
+                <div class="project-tags">
+                  <span class="project-tag">Python</span>
+                </div>
+                <a href="/projects/python/temp-converter" class="btn btn-sm">View Project</a>
+              </div>
+            </div>
+            
+            <div class="project-card">
+              <div class="project-content">
+                <h3>Grade Calculator</h3>
+                <p>A tool to calculate and track academic grades.</p>
+                <div class="project-tags">
+                  <span class="project-tag">Python</span>
+                </div>
+                <a href="/projects/python/grade-calc" class="btn btn-sm">View Project</a>
+              </div>
+            </div>
+            
+            <div class="project-card">
+              <div class="project-content">
+                <h3>Personal Website</h3>
+                <p>This website showcasing my portfolio and skills.</p>
+                <div class="project-tags">
+                  <span class="project-tag">HTML</span>
+                  <span class="project-tag">CSS</span>
+                  <span class="project-tag">JavaScript</span>
+                </div>
+                <a href="/" class="btn btn-sm">View Project</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="resume-links">
+            <a href="/projects" class="resume-link">View All Projects <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
 
-  <section>
-    <h3>Work Experience</h3>
-    <ul>
-        <li><p>N/A</p></li>
-        <!-- add more as needed -->
-    </ul>
-  </section>
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+  <script src="/js/loadfooter.js"></script>
 
-  <section>
-    <h3>Skills</h3>
-    <ul>
-        <li>- Coding</li>
-          <p>Languages in order of most experiance:</p>
-          <ol>
-            <li>- Python</li>
-            <li>- HTML, CSS and JS*</li>
-            <li>- C#*</li>
-          </ol>
-        <li>- Fishkeeping</li>
-        <li>- 3D printing</li>
-        <!-- Add more as acquired -->
-      <p>*minimal experiance</p>
-    </ul>
-  </section>
-
-  <section>
-    <h3>Projects</h3>
-    <ul>
-      <li><a href="/projects" target="_blank" rel="noopener noreferrer">All my projects</a></li>
-      <li><a href="/projects/python/temp-converter">Temprature converter</a></li>
-      <li><a href="/projects/python/grade-calc">Grade Calculator</a></li>
-      <!-- add more as needed -->
-    </ul>
-  </section>
-
+  <!-- Background particles -->
   <canvas id="particles"></canvas>
+  
+  <!-- Additional CSS for resume page -->
+  <style>
+    .resume-container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    .resume-section {
+      margin-bottom: 3rem;
+    }
+    
+    .resume-section h2 {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      color: var(--primary-color);
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 0.5rem;
+    }
+    
+    .resume-section h2 i {
+      margin-right: 0.75rem;
+    }
+    
+    .resume-content {
+      padding-left: 1.5rem;
+    }
+    
+    .resume-item {
+      margin-bottom: 2rem;
+    }
+    
+    .resume-item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .resume-item-header h3 {
+      margin: 0;
+      color: var(--light-text);
+    }
+    
+    .resume-date {
+      color: var(--primary-color);
+      font-weight: 500;
+    }
+    
+    .resume-subtitle {
+      color: var(--muted-text);
+      font-style: italic;
+      margin-top: 0;
+    }
+    
+    .resume-list {
+      margin-top: 0.75rem;
+      padding-left: 1.25rem;
+    }
+    
+    .resume-list li {
+      margin-bottom: 0.5rem;
+      color: var(--muted-text);
+    }
+    
+    .resume-links {
+      margin-top: 1.5rem;
+      text-align: center;
+    }
+    
+    .resume-link {
+      display: inline-flex;
+      align-items: center;
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color var(--transition-speed) ease;
+    }
+    
+    .resume-link i {
+      margin-left: 0.5rem;
+      font-size: 0.8rem;
+    }
+    
+    .resume-link:hover {
+      color: var(--primary-hover);
+    }
+    
+    /* Skills styling */
+    .skills-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    
+    @media (min-width: 768px) {
+      .skills-container {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    
+    .skill-category h3 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      color: var(--light-text);
+    }
+    
+    .skill-items {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .skill-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+    
+    .skill-name {
+      color: var(--muted-text);
+      font-weight: 500;
+    }
+    
+    .skill-note {
+      font-size: 0.8rem;
+      color: var(--muted-text);
+      font-style: italic;
+    }
+    
+    .skill-bar {
+      height: 8px;
+      background-color: var(--border-color);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    
+    .skill-level {
+      height: 100%;
+      background-color: var(--primary-color);
+      border-radius: 4px;
+    }
+    
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    
+    .skill-tag {
+      background-color: var(--card-bg);
+      color: var(--muted-text);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      transition: all var(--transition-speed) ease;
+    }
+    
+    .skill-tag:hover {
+      background-color: var(--primary-color);
+      color: var(--dark-bg);
+    }
+    
+    /* Project cards in resume */
+    .resume-projects {
+      margin-top: 1.5rem;
+    }
+    
+    .resume-projects .project-card {
+      height: auto;
+    }
+    
+    .resume-projects .project-content {
+      padding: 1.5rem;
+    }
+    
+    .resume-projects .project-card h3 {
+      margin-top: 0;
+    }
+  </style>
+  
+  <!-- Site Utilities -->
+  <script src="/js/site-utils.js"></script>
 </body>
 
 </html>

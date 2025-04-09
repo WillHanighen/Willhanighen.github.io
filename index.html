@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Will Hanighen | Amateur Programmer</title>
   
   <!-- Google Search Verification -->
@@ -28,35 +28,200 @@
   <meta name="twitter:description" content="Personal website of Will Hanighen, amateur programmer and developer showcasing various projects and skills.">
   <meta name="twitter:image" content="https://willhanighen.github.io/generated-icon.png">
   
+  <!-- Favicon -->
   <link rel="icon" href="/imgs/favicon.ico" type="image/x-icon">
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="/js/ab-particles.min.js"></script>  <!-- Source: https://www.cssscript.com/demo/particle-animations-ab/ -->
-  <script src="/js/typewriter-main.js"></script>  <!-- Source: https://github.com/mattboldt/typed.js -->
-  <link href="/css/style.css" rel="stylesheet" type="text/css" />
+  <script src="/js/background.js"></script>
+  
+  <!-- Modern CSS -->
+  <link href="/css/modern-style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body onload="particles(speed=15, avoidMouse=false, opacity=65)">
+<body onload="particles({speed: 8, avoidMouse: false, opacity: 65})">
+  <!-- Navigation -->
   <div id="navbar-placeholder"></div>
-  <script src="/js/loadnavbar.js"></script>
+  <script src="/js/loadnavbar-modern.js"></script>
 
-  <br><br><br><br><br><br>
-  <div class="typing-container">
-    <span>Will Hanighen, </span><span class="element"></span><br><br>
+  <!-- Hero Section -->
+  <div class="hero-section">
+    <div class="typing-container fade-in">
+      <span>Will Hanighen, </span><span class="element"></span>
+    </div>
+    
+    <div class="hero-description fade-in">
+      Welcome to my portfolio website. I'm passionate about programming, technology, and creating interesting projects. Explore my work and get to know more about what I do.
+    </div>
+    
+    <div class="cta-buttons fade-in">
+      <a href="/projects" class="cta-button">View Projects</a>
+      <a href="/contact" class="cta-button outline">Contact Me</a>
+    </div>
   </div>
 
-  <section>
-    <div class="carousel-container">
-      <div class="carousel">
-        <img src="imgs/9th-grade-yearbook.jpg" alt="Will Hanighen" style="max-width: 400px; max-height: 400px; width: auto; height: auto;">
-        <img src=imgs/placeholder.jpg alt="placeholder"style="max-width: 400px; max-height: 400px; width: auto; height: auto;">
-        <img src=imgs/placeholder.jpg alt="placeholder"style="max-width: 400px; max-height: 400px; width: auto; height: auto;">
-        <img src=imgs/placeholder.jpg alt="placeholder"style="max-width: 400px; max-height: 400px; width: auto; height: auto;">
-        <img src=imgs/placeholder.jpg alt="placeholder"style="max-width: 400px; max-height: 400px; width: auto; height: auto;">
-        <img src=imgs/placeholder.jpg alt="placeholder"style="max-width: 400px; max-height: 400px; width: auto; height: auto;">
-      </div>
-    </div>
+  <!-- Content Section -->
+  <div class="content-section">
+    <!-- About Me Section -->
+    <section class="fade-in">
+      <h2>About Me</h2>
+      <p>I'm Will Hanighen, an amateur programmer with a passion for creating and problem-solving. I enjoy working on various programming projects, particularly in Python, and I'm constantly learning new technologies and skills.</p>
+      <p>When I'm not coding, I'm interested in fishkeeping, 3D printing, and gaming.</p>
     </section>
+    
+    <!-- Featured Projects -->
+    <section class="fade-in">
+      <h2>Featured Projects</h2>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <img src="/imgs/temp-converter.jpg" alt="Temperature Converter Project" onerror="this.src='/imgs/placeholder.jpg'">
+          <div class="project-content">
+            <h3>Temperature Converter</h3>
+            <p>A Python application that converts between different temperature units.</p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Web</span>
+            </div>
+            <div class="project-links">
+              <a href="/projects/python/temp-converter" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="project-card">
+          <img src="/imgs/grade-calc.jpg" alt="Grade Calculator Project" onerror="this.src='/imgs/placeholder.jpg'">
+          <div class="project-content">
+            <h3>Grade Calculator</h3>
+            <p>A tool to calculate final grades based on assignments and tests.</p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Education</span>
+            </div>
+            <div class="project-links">
+              <a href="/projects/python/grade-calc" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 3 -->
+        <div class="project-card">
+          <img src="/imgs/tic-tac-toe.jpg" alt="Tic-Tac-Toe Project" onerror="this.src='/imgs/placeholder.jpg'">
+          <div class="project-content">
+            <h3>Tic-Tac-Toe</h3>
+            <p>A classic game of Tic-Tac-Toe implemented in Python.</p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Game</span>
+            </div>
+            <div class="project-links">
+              <a href="/projects/python/tic-tac-toe" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Photo Gallery -->
+    <section class="fade-in">
+      <h2>Gallery</h2>
+      <div class="carousel-container">
+        <div class="carousel">
+          <div><img src="imgs/9th-grade-yearbook.jpg" alt="Will Hanighen"></div>
+          <div><img src="imgs/placeholder.jpg" alt="placeholder"></div>
+          <div><img src="imgs/placeholder.jpg" alt="placeholder"></div>
+          <div><img src="imgs/placeholder.jpg" alt="placeholder"></div>
+          <div><img src="imgs/placeholder.jpg" alt="placeholder"></div>
+          <div><img src="imgs/placeholder.jpg" alt="placeholder"></div>
+        </div>
+        <div class="carousel-controls">
+          <div class="carousel-dot active"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+  <script src="/js/loadfooter.js"></script>
+
+  <!-- Background particles -->
   <canvas id="particles"></canvas>
+  
+  <!-- Scripts -->
+  <script src="/js/typewriter-main.js"></script>
+  
+  <!-- Carousel Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const carousel = document.querySelector('.carousel');
+      const dots = document.querySelectorAll('.carousel-dot');
+      const slides = document.querySelectorAll('.carousel > div');
+      let currentIndex = 0;
+      const slidesPerView = 2;
+      const maxIndex = Math.max(0, slides.length - slidesPerView);
+      let autoAdvanceTimer;
+      const autoAdvanceDelay = 5000; // 5 seconds
+      
+      // Function to start/reset the timer
+      function resetAutoAdvanceTimer() {
+        // Clear any existing timer
+        if (autoAdvanceTimer) {
+          clearInterval(autoAdvanceTimer);
+        }
+        
+        // Set a new timer
+        autoAdvanceTimer = setInterval(() => {
+          currentIndex = (currentIndex + 1) % (maxIndex + 1);
+          updateCarousel();
+        }, autoAdvanceDelay);
+      }
+      
+      // Set up dots click events
+      dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+          currentIndex = Math.min(index, maxIndex);
+          updateCarousel();
+          resetAutoAdvanceTimer(); // Reset timer when user clicks
+        });
+      });
+      
+      // Update carousel position and active dot
+      function updateCarousel() {
+        const slideWidth = carousel.clientWidth / slidesPerView;
+        carousel.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+        
+        // Calculate which dot should be active based on visible slides
+        const activeDotIndex = Math.min(currentIndex, dots.length - 1);
+        
+        // Update active dot
+        dots.forEach((dot, index) => {
+          if (index === activeDotIndex) {
+            dot.classList.add('active');
+          } else {
+            dot.classList.remove('active');
+          }
+        });
+      }
+      
+      // Initial setup
+      updateCarousel();
+      
+      // Start the auto-advance timer
+      resetAutoAdvanceTimer();
+    });
+  </script>
+  
+  <!-- Site Utilities -->
+  <script src="/js/site-utils.js"></script>
 </body>
 
 </html>
