@@ -796,3 +796,7 @@ footer {
 .token.function { color: #dcdcaa; }
 .token.class-name { color: #4ec9b0; }
 .token.operator { color: #d4d4d4; }
+
+.hero-section {
+  padding-top: 6rem; /* or adjust to match your navbar height */
+}
